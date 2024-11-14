@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+    body {
+        margin: 0;
+    }
+
+    div {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .footer {
+        background-color: aqua;
+    }
+
+    .header {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        background-color: aqua;
+        justify-content: space-between; 
+        padding: 10px;
+    }
+
+    .title 
+    {
+        font-size: 50px;
+        font-weight: bold;
+        align-self: center;
+        flex-basis: 25%; /* Title takes 1/4 of the header */
+        text-align: center;
+    }
+
+    .text {
+        margin-right: 15px;
+        font-size: 20px;
+        align-self: center;
+        flex-basis: 65%; /* Text takes the remaining space */
+    }
+
+    .main {    
+        background-color: rgb(216, 216, 216);
+        height: 300px;
+        position: relative;
+        left: 25%;
+        right: 25%;
+        width: 50%;
+    }
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="title">Title</div>
+        <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus repellat quasi provident labore cum! At explicabo repudiandae expedita eos quam. Non voluptates nihil debitis corporis eum tempora commodi tempore facere!</div>
+    </div>
+    <div class="main">Main</div>
+    <div class="footer">Footer</div>
+</body>
+</html>
